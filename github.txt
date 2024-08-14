@@ -1,0 +1,34 @@
+remote[Github]         Local[Laptop]
+cd :- change directory // folder k aandar jane k liye 
+ls :- list files  // to see all files
+ls -a :-hidden files a for all
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+
+
+
+    ""Git/Github""
+1> Clone - Cloning a respo on local machine
+      git clone <some link>
+2>status - display the state of the code
+      git status
+
+after adding new file or new content we have to do 2 step process add-->commit...
+
+- 4 Types of Status :
+[untracked]-new files that git doesn't yet track
+[modified]-changed
+[staged]-file is ready to committed
+[unmodified]-unchanged
+
+ADD & COMMIT
+add - add new or changed files in your working directory to the git staging area.
+        git add <file name>   //to add specific file
+        git add .             //to add all files
+commit - it is the record of change
+     git commit -m "some message"
+
+PUSH COMMAND
+push - upload local repo content to remote repo
+      git push origin main
