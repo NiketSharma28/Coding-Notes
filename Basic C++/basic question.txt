@@ -1,0 +1,28 @@
+//Program to find the maximum among three numbers
+// Program to find maximum,minimum among two number
+// two numbers are equal or not . If no equal so which one is greater ?
+//greater among two numbers
+// eligible for vote or not
+//Program to check if a number is even or odd
+//Program to check if a triangle is scalene,isosceles,or equilateral
+//Program to check if an alphabet is vowel or a consonant
+//print numbers till 5 using for do while
+//print numbers till 5 using for loop
+//program to find sum of natural numbers till n
+//program to add only positive number
+//Program to display multiplication table upto 10
+//print numbers till 5 using for while
+//write a program to print all odd number till n
+//Write a program to check if a given number is prime or not
+//Write a program to print all prime in a given range
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    
+
+
+    return 0;
+
+}
