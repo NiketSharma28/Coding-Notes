@@ -1,5 +1,8 @@
 remote[Github]         Local[Laptop]
 cd :- change directory // folder k aandar jane k liye 
+cd .. :- it is used to exit the current directory
+mkdir :- used to make new directory
+
 ls :- list files  // to see all files
 ls -a :-hidden files a for all
 git config --global user.email "you@example.com"
