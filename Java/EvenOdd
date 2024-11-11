@@ -1,0 +1,43 @@
+import java.io.*;
+
+public class EvenOddIO {
+    public static void main(String[] args) {
+        FileReader inp = null;
+        FileWriter oup1 = null;
+        FileWriter oup2 = null;
+
+        try {
+            inp = new FileReader("num.txt");
+            oup1 = new FileWriter("even.txt");
+            oup2 = new FileWriter("odd.txt");
+            BufferedReader br = new BufferedReader(inp);
+
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] numbers = line.split("\\s+");
+                for (String numStr : numbers) {
+                    try {
+                        int num = Integer.parseInt(numStr);
+                        if (num % 2 == 0) {
+                            oup1.write(num + "\n");
+                        } else {
+                            oup2.write(num + "\n");
+                        }
+                    } catch (NumberFormatException e) {
+                        System.err.println("Invalid number: " + numStr);
+                    }
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (inp != null) inp.close();
+                if (oup1 != null) oup1.close();
+                if (oup2 != null) oup2.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
