@@ -1,0 +1,42 @@
+class Rectangle {
+        protected double length;
+        protected double width;
+    
+        public Rectangle(double length, double width) {
+            this.length = length;
+            this.width = width;
+        }
+    
+        public double calculateArea() {
+            return length * width;
+        }
+    }
+    
+    class Cube extends Rectangle {
+        private double height;
+    
+        public Cube(double length, double width, double height) {
+            super(length, width);
+            this.height = height;
+        }
+    
+        public double calculateVolume() {
+            return length * width * height;
+        }
+    }
+    
+    public class CalculateArea {
+        public static void main(String[] args) {
+            // Create a rectangle
+            Rectangle rectangle = new Rectangle(5.0, 3.0);
+            double rectangleArea = rectangle.calculateArea();
+            System.out.println("Area of the rectangle: " + rectangleArea);
+    
+            // Create a cube (inherits from Rectangle)
+            Cube cube = new Cube(3.0, 3.0, 3.0);
+            double cubeArea = cube.calculateArea(); // Inherits calculateArea() from Rectangle
+            double cubeVolume = cube.calculateVolume();
+            System.out.println("Area of the cube (base class method): " + cubeArea);
+            System.out.println("Volume of the cube (derived class method): " + cubeVolume);
+        }
+    }
