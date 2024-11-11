@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class StringConversionAndLength {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String inputString = scanner.nextLine();
+
+        // Convert the string to uppercase
+        char[] uppercaseChars = inputString.toUpperCase().toCharArray();
+
+        // Convert the string to lowercase
+        char[] lowercaseChars = inputString.toLowerCase().toCharArray();
+
+        // Calculate the length of the string using arrays
+        int length = uppercaseChars.length;
+
+        System.out.println("Uppercase: " + new String(uppercaseChars));
+        System.out.println("Lowercase: " + new String(lowercaseChars));
+        System.out.println("Length of the string: " + length);
+
+        scanner.close();
+    }
+}
